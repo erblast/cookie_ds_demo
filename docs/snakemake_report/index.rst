@@ -1,23 +1,25 @@
 .. raw:: html
 
    <!-- 
-   The content rendered from this file is used for the snakemake report.
+   The content rendered from this file is used for the jekyll github page.
    -->
 
 Documentation
 =============
 
 -  `snakemake
-   report <https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html>`__\ {:target=“\_blank”}
+   report <https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html>`__
 
--  `R functions
-   documentation <https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html>`__\ {:target=“\_blank”}
+-  `cookiedsdemopkgr
+   documentation <https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html>`__
 
--  `README <https://erblast.github.io/cookie_ds_demo//README.html>`__\ {:target=“\_blank”}
+-  `README <https://erblast.github.io/cookie_ds_demo//README.html>`__
+
+-  `github repo <https://github.com/erblast/cookie_ds_demo.git>`__
 
 html Files Created from Rules
 =============================
 
--  `plot_jup_nb.html <html/plot_jup_nb.html>`__
--  `plot_rmd_shell.html <html/plot_rmd_shell.html>`__
--  `plot_rmd_snakemake.html <html/plot_rmd_snakemake.html>`__
+-  `plot_jup_nb.html <https://erblast.github.io/cookie_ds_demo//html/plot_jup_nb.html>`__
+-  `plot_rmd_shell.html <https://erblast.github.io/cookie_ds_demo//html/plot_rmd_shell.html>`__
+-  `plot_rmd_snakemake.html <https://erblast.github.io/cookie_ds_demo//html/plot_rmd_snakemake.html>`__

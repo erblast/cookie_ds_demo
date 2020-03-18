@@ -1,0 +1,49 @@
+---
+title: "Index"
+output: 
+  md_document:
+    variant: gfm
+editor_options:
+  chunk_output_type: console
+---
+<!-- 
+The content rendered from this file is used for the jekyll github page.
+-->
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
+debug_file = paste0('debug/', 'index', '_rmd.Rdata')
+save.image(debug_file)
+```
+
+
+```{r libraries, echo = FALSE}
+suppressPackageStartupMessages( library('tidyverse') )
+suppressPackageStartupMessages( library('knitr') )
+suppressPackageStartupMessages( library('devtools') )
+suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
+```
+
+# Documentation
+- [snakemake report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html){:target="_blank"}
+
+- [cookiedsdemopkgr documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html){:target="_blank"}
+
+- [README](https://erblast.github.io/cookie_ds_demo//_site/README.html){:target="_blank"}
+
+# html Files Created from Rules
+
+```{r echo = FALSE}
+
+path = 'docs/html'
+
+files = dir(path, pattern = '.html$')
+```
+
+```{r echo = FALSE }
+mdown_list = paste0("- [", files, "](https://erblast.github.io/cookie_ds_demo//html/", files, '){:target="_blank"}' ) %>%
+  paste( collapse = '\n')
+```
+
+`r mdown_list`
+

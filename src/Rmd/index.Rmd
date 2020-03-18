@@ -25,12 +25,11 @@ suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
 ```
 
 # Documentation
+- <a href="https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html" target="_blank">snakemake report</a>
 
-- [snakemake report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html){:target="_blank"}
+- <a href="https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html" target="_blank">R functions documentation</a>
 
-- [R functions documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html){:target="_blank"}
-
-- [README](https://erblast.github.io/cookie_ds_demo//README.html){:target="_blank"}
+- <a href="https://erblast.github.io/cookie_ds_demo//README.html" target="_blank">README</a>
 
 # html Files Created from Rules
 
@@ -42,7 +41,7 @@ files = dir(path, pattern = '.html$')
 
 file_paths = paste0('html', '/', files)
   
-links = paste0('<a target=_blank href=', file_paths, '>',files, '</a>')
+links = paste0('<a target=\\"_blank\\" href=\\"', file_paths, '\\"">',files, '</a>')
 
 ```
 

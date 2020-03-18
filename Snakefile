@@ -28,7 +28,7 @@ rule plot_rmd_snakemake:
         'src/Rmd/plot_snakemake.Rmd'
 
 
-rule plot_rmd_via_shell:
+rule plot_rmd_shell:
     input:
         'src/Rmd/plot_shell.Rmd',
         'data/out/feather/data.feather'
@@ -84,7 +84,7 @@ rule report:
         'docs/snakemake_report/rst/readme.rst',
         'docs/snakemake_report/index.rst',
         'docs/index.md',
-        'docs/README.md'
+        'docs/_site/README.md'
 
 rule readme_rst:
     input:
@@ -98,19 +98,25 @@ rule copy_readme_report:
     input:
         "README.md"
     output:
-        "docs/README.md",
+        "docs/_site/README.md",
     shell:
-        "cp README.md docs/README.md"
+        "cp README.md docs/_site/README.md"
 
-rule index_md:
+rule index_md_jekyll:
     output:
         'docs/index.md'
     script:
-        'src/Rmd/index.Rmd'
+        'src/Rmd/index_jekyll.Rmd'
+
+rule index_md_rst:
+    output:
+        temp('docs/snakemake_report/index.md')
+    script:
+        'src/Rmd/index_rst.Rmd'
 
 rule index_rst:
     input:
-        'docs/index.md'
+        'docs/snakemake_report/index.md'
     output:
         'docs/snakemake_report/index.rst'
     shell:
