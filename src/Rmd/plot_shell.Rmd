@@ -3,7 +3,7 @@ title: "plot data"
 output: 
     html_document:
       toc: true
-      toc_float: false
+      toc_float: true
       toc_depth: 2
 editor_options:
   chunk_output_type: console
@@ -12,6 +12,8 @@ params:
     output: "docs/png/plot2.png"
     rule: "plot_rmd_snakemake"
 ---
+
+# `r params$rule`
 
 This file was rendered via shell. All parameters passed via `markdown::render` call.
 

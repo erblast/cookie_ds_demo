@@ -13,8 +13,6 @@ Documentation
 -  `cookiedsdemopkgr
    documentation <https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html>`__
 
--  `README <https://erblast.github.io/cookie_ds_demo//README.html>`__
-
 -  `github repo <https://github.com/erblast/cookie_ds_demo.git>`__
 
 html Files Created from Rules

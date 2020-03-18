@@ -7,8 +7,7 @@
 lint_package(...)
 }
 \arguments{
-\item{...}{additional arguments passed to \code{\link[lintr]{lint}}, e.g.
-\code{cache} or \code{linters}.}
+\item{...}{additional arguments passed to \code{\link{lint}}}
 }
 \value{
 -

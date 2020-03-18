@@ -9,6 +9,9 @@ editor_options:
   chunk_output_type: console
 ---
 
+# `r snakemake@rule[[1]]`
+
+
 This file was rendered via snakemake. All parameters passed via snakemake object.
 
 ```{r setup, echo=FALSE}

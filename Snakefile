@@ -1,5 +1,7 @@
 include: 'rules/test.snakefile.py'
 include: 'rules/lint.snakefile.py'
+include: 'rules/report.snakefile.py'
+
 configfile: 'config/config.yml'
 report: 'docs/snakemake_report/index.rst'
 
@@ -73,51 +75,3 @@ rule plot_nb_2_html:
     shell:
         'jupyter nbconvert --to html {input} --output ../../../{output}'
 
-
-
-# Report -------------------------------------------------------------------------------------
-# can't be put into an imported rule because of the report() tag for the README does not
-# get resolved properly
-
-rule report:
-    input:
-        'docs/snakemake_report/rst/readme.rst',
-        'docs/snakemake_report/index.rst',
-        'docs/index.md',
-        'docs/_site/README.md'
-
-rule readme_rst:
-    input:
-        'README.md'
-    output:
-        report('docs/snakemake_report/rst/readme.rst', caption='docs/snakemake_report/rst/readme.rst', category = 'README')
-    shell:
-        "pandoc {input} --from markdown --to rst -s -o {output}"
-
-rule copy_readme_report:
-    input:
-        "README.md"
-    output:
-        "docs/_site/README.md",
-    shell:
-        "cp README.md docs/_site/README.md"
-
-rule index_md_jekyll:
-    output:
-        'docs/index.md'
-    script:
-        'src/Rmd/index_jekyll.Rmd'
-
-rule index_md_rst:
-    output:
-        temp('docs/snakemake_report/index.md')
-    script:
-        'src/Rmd/index_rst.Rmd'
-
-rule index_rst:
-    input:
-        'docs/snakemake_report/index.md'
-    output:
-        'docs/snakemake_report/index.rst'
-    shell:
-        "pandoc {input} --from markdown --to rst -s -o {output}"

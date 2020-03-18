@@ -11,8 +11,8 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-  lintr,
-  devtools
+  lintr
 Suggests:
-    testthat
-RoxygenNote: 7.0.2
+    testthat,
+    devtools
+RoxygenNote: 6.1.1

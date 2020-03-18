@@ -24,16 +24,14 @@ suppressPackageStartupMessages( library('devtools') )
 suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
 ```
 
-# Documentation
+### Documentation
 - [snakemake report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html)
 
 - [cookiedsdemopkgr documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html)
 
-- [README](https://erblast.github.io/cookie_ds_demo//README.html)
-
 - [github repo](https://github.com/erblast/cookie_ds_demo.git)
 
-# html Files Created from Rules
+### html Files Created from Rules
 
 ```{r echo = FALSE}
 
