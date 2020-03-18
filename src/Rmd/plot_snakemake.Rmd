@@ -11,6 +11,13 @@ editor_options:
 
 This file was rendered via snakemake. All parameters passed via snakemake object.
 
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
+debug_file = paste0('debug/', snakemake@rule[[1]], '_rmd.Rdata')
+save.image(debug_file)
+```
+
+
 ```{r libraries = FALSE}
 suppressPackageStartupMessages( library('tidyverse') )
 suppressPackageStartupMessages( library('easyalluvial') )
@@ -19,16 +26,9 @@ suppressPackageStartupMessages( library('devtools') )
 suppressPackageStartupMessages( devtools::load_all("cookiedsdemopkgr") )
 ```
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
-debug_file = paste0('debug/', 'index', '_rmd.Rdata')
-save.image(debug_file)
-```
 
 
 ```{r}
-save.image( paste( "debug/", snakemake@rule[[1]], ".Rdata" ) )
-
 df = feather::read_feather(snakemake@input[[1]])
 
 easyalluvial::alluvial_wide(df, fill_by = 'last_variable')

@@ -1553,7 +1553,6 @@ suppressPackageStartupMessages( library('easyalluvial') )
 suppressPackageStartupMessages( library('feather') )
 suppressPackageStartupMessages( library('devtools') )
 suppressPackageStartupMessages( devtools::load_all(&quot;cookiedsdemopkgr&quot;) )</code></pre>
-<pre><code>## Loading cookiedsdemopkgr</code></pre>
 <pre class="r"><code>df = feather::read_feather(params$input[[1]])
 
 easyalluvial::alluvial_wide(df, fill_by = 'first_variable')</code></pre>

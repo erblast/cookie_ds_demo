@@ -10,18 +10,21 @@ editor_options:
 The content rendered from this file is used for the snakemake report.
 -->
 
-```{r libraries = FALSE}
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
+debug_file = paste0('debug/', 'index', '_rmd.Rdata')
+save.image(debug_file)
+```
+
+
+```{r libraries, echo = FALSE}
 suppressPackageStartupMessages( library('tidyverse') )
 suppressPackageStartupMessages( library('knitr') )
 suppressPackageStartupMessages( library('devtools') )
 suppressPackageStartupMessages( devtools::load_all("cookiedsdemopkgr") )
 ```
 
-```{r setup, echo=FALSE}
-knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
-debug_file = paste0('debug/', 'index', '_rmd.Rdata')
-save.image(debug_file)
-```
+# Documentation
 
 - [snakemake report](./snakemake_report/index.html)
 
@@ -29,7 +32,7 @@ save.image(debug_file)
 
 - [README](README.html)
 
-# Html Files Created from Rules
+# html Files Created from Rules
 
 ```{r echo = FALSE}
 
