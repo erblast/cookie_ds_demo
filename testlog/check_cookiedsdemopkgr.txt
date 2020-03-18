@@ -7,12 +7,12 @@ Setting env vars:
 ● CXXFLAGS  : -Wall -pedantic
 ● CXX11FLAGS: -Wall -pedantic
 ────────────────────────────────────────────────────────────────────────────────
-     checking for file ‘/app/cookiedsdemopkgr/DESCRIPTION’ ...  ✔  checking for file ‘/app/cookiedsdemopkgr/DESCRIPTION’
+     checking for file ‘/app/cookiedsdemopkgr/DESCRIPTION’ ...     checking for file ‘/app/cookiedsdemopkgr/DESCRIPTION’ ...   ✔  checking for file ‘/app/cookiedsdemopkgr/DESCRIPTION’
   ─  preparing ‘cookiedsdemopkgr’:
-     checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+   checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
   ─  checking for LF line-endings in source and make files and shell scripts
   ─  checking for empty or unneeded directories
-─  building ‘cookiedsdemopkgr_0.0.0.9000.tar.gz’
+  ─  building ‘cookiedsdemopkgr_0.0.0.9000.tar.gz’
      
 ── Checking ──────────────────────────────────────────────── cookiedsdemopkgr ──
 Setting env vars:
@@ -20,7 +20,7 @@ Setting env vars:
 ● _R_CHECK_CRAN_INCOMING_       : FALSE
 ● _R_CHECK_FORCE_SUGGESTS_      : FALSE
 ── R CMD check ─────────────────────────────────────────────────────────────────
-  ─  using log directory ‘/tmp/RtmpzxQC3c/cookiedsdemopkgr.Rcheck’ (370ms)
+  ─  using log directory ‘/tmp/RtmpAvhsua/cookiedsdemopkgr.Rcheck’ (422ms)
   ─  using R version 3.6.0 (2019-04-26)
 ─  using platform: x86_64-pc-linux-gnu (64-bit)
 ─  using session charset: UTF-8
@@ -28,20 +28,20 @@ Setting env vars:
   ✔  checking for file ‘cookiedsdemopkgr/DESCRIPTION’
 ─  this is package ‘cookiedsdemopkgr’ version ‘0.0.0.9000’
 ─  package encoding: UTF-8
-  ✔  checking package namespace information
-   checking package dependencies ...  ✔  checking package dependencies (2.8s)
-   checking if this is a source package ...  ✔  checking if this is a source package
+   checking package namespace information ...  ✔  checking package namespace information
+   checking package dependencies ...  ✔  checking package dependencies (2.7s)
+  ✔  checking if this is a source package
 ✔  checking if there is a namespace
      checking for executable files ...  ✔  checking for executable files
   ✔  checking for hidden files and directories
 ✔  checking for portable file names
-✔  checking for sufficient/correct file permissions
-  ✔  checking serialization versions
-   checking whether package ‘cookiedsdemopkgr’ can be installed ...  ✔  checking whether package ‘cookiedsdemopkgr’ can be installed (3.9s)
+   checking for sufficient/correct file permissions ...  ✔  checking for sufficient/correct file permissions
+✔  checking serialization versions
+   checking whether package ‘cookiedsdemopkgr’ can be installed ...  ✔  checking whether package ‘cookiedsdemopkgr’ can be installed (4.4s)
      checking installed package size ...  ✔  checking installed package size
-  ✔  checking package directory
-     checking for future file timestamps ...  ✔  checking for future file timestamps (943ms)
-     checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+     checking package directory ...  ✔  checking package directory
+   checking for future file timestamps ...  ✔  checking for future file timestamps (1.1s)
+     checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information (348ms)
   N  checking top-level files
    Non-standard file/directory found at top level:
      ‘LICENCE.md’
@@ -50,41 +50,41 @@ Setting env vars:
    checking package subdirectories ...  ✔  checking package subdirectories
      checking R files for non-ASCII characters ...  ✔  checking R files for non-ASCII characters
      checking R files for syntax errors ...  ✔  checking R files for syntax errors
-     checking whether the package can be loaded ...  ✔  checking whether the package can be loaded (888ms)
+     checking whether the package can be loaded ...  ✔  checking whether the package can be loaded (917ms)
      checking whether the package can be loaded with stated dependencies ...  ✔  checking whether the package can be loaded with stated dependencies (810ms)
-     checking whether the package can be unloaded cleanly ...  ✔  checking whether the package can be unloaded cleanly (808ms)
+     checking whether the package can be unloaded cleanly ...  ✔  checking whether the package can be unloaded cleanly (811ms)
      checking whether the namespace can be loaded with stated dependencies ...  ✔  checking whether the namespace can be loaded with stated dependencies
      checking whether the namespace can be unloaded cleanly ...  ✔  checking whether the namespace can be unloaded cleanly
-     checking loading without being on the library search path ...  ✔  checking loading without being on the library search path (971ms)
-     checking dependencies in R code ...  N  checking dependencies in R code (809ms)
+     checking loading without being on the library search path ...  ✔  checking loading without being on the library search path (972ms)
+     checking dependencies in R code ...  N  checking dependencies in R code (858ms)
    Package in Depends field not imported from: ‘devtools’
      These packages need to be imported from (in the NAMESPACE file)
      for when this namespace is loaded but not attached.
      checking S3 generic/method consistency ...  ✔  checking S3 generic/method consistency (1.2s)
-   checking replacement functions ...  ✔  checking replacement functions (792ms)
-     checking foreign function calls ...  ✔  checking foreign function calls (792ms)
-     checking R code for possible problems ...  ✔  checking R code for possible problems (3.7s)
+     checking replacement functions ...  ✔  checking replacement functions (823ms)
+   checking foreign function calls ...  ✔  checking foreign function calls (835ms)
+   checking R code for possible problems ...  ✔  checking R code for possible problems (3.7s)
      checking Rd files ...  ✔  checking Rd files
      checking Rd metadata ...  ✔  checking Rd metadata
-     checking Rd line widths ...  ✔  checking Rd line widths
-     checking Rd cross-references ...  ✔  checking Rd cross-references
-     checking for missing documentation entries ...  ✔  checking for missing documentation entries (789ms)
-     checking for code/documentation mismatches ...  ✔  checking for code/documentation mismatches (2.5s)
-   checking Rd \usage sections ...  ✔  checking Rd \usage sections (1.3s)
+   checking Rd line widths ...  ✔  checking Rd line widths
+   checking Rd cross-references ...  ✔  checking Rd cross-references
+   checking for missing documentation entries ...  ✔  checking for missing documentation entries (791ms)
+   checking for code/documentation mismatches ...  ✔  checking for code/documentation mismatches (2.4s)
+   checking Rd \usage sections ...  ✔  checking Rd \usage sections (1.4s)
    checking Rd contents ...  ✔  checking Rd contents
    checking for unstated dependencies in examples ...  ✔  checking for unstated dependencies in examples
-   checking examples ...  ✔  checking examples (1.4s)
-         checking for unstated dependencies in ‘tests’ ...  ✔  checking for unstated dependencies in ‘tests’
+   checking examples ...  ✔  checking examples (1.6s)
+     checking for unstated dependencies in ‘tests’ ...  ✔  checking for unstated dependencies in ‘tests’
    checking tests ...  ─  checking tests
-     Running ‘testthat.R’    ✔  Running ‘testthat.R’ (952ms)
+     Running ‘testthat.R’    ✔  Running ‘testthat.R’ (1.1s)
    
    See
-     ‘/tmp/RtmpzxQC3c/cookiedsdemopkgr.Rcheck/00check.log’
+     ‘/tmp/RtmpAvhsua/cookiedsdemopkgr.Rcheck/00check.log’
    for details.
    
    
 ── R CMD check results ──────────────────────── cookiedsdemopkgr 0.0.0.9000 ────
-Duration: 28.5s
+Duration: 29.8s
 
 ❯ checking top-level files ... NOTE
   Non-standard file/directory found at top level:
