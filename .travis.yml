@@ -4,4 +4,5 @@ services:
   - docker
   
 script: 
-  - docker build . --file  docker/deploy.dockerfile
+  - docker build . --file  docker/deploy.dockerfile -t cookiedsdemo && \
+    docker run -v"$PWD:/app/" cookiedsdemo
