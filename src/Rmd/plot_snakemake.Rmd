@@ -3,7 +3,7 @@ title: "plot data"
 output: 
     html_document:
         toc: true
-        toc_float: true
+        toc_float: false
         toc_depth: 2
 editor_options:
   chunk_output_type: console
@@ -23,7 +23,7 @@ suppressPackageStartupMessages( library('tidyverse') )
 suppressPackageStartupMessages( library('easyalluvial') )
 suppressPackageStartupMessages( library('feather') )
 suppressPackageStartupMessages( library('devtools') )
-suppressPackageStartupMessages( devtools::load_all("cookiedsdemopkgr") )
+suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
 ```
 
 

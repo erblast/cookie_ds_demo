@@ -21,16 +21,16 @@ save.image(debug_file)
 suppressPackageStartupMessages( library('tidyverse') )
 suppressPackageStartupMessages( library('knitr') )
 suppressPackageStartupMessages( library('devtools') )
-suppressPackageStartupMessages( devtools::load_all("cookiedsdemopkgr") )
+suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
 ```
 
 # Documentation
 
-- [snakemake report](./snakemake_report/index.html)
+- [snakemake report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html){:target="_blank"}
 
-- [R functions documentation](./cookie_ds_demoRdocs/index.html)
+- [R functions documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html){:target="_blank"}
 
-- [README](README.html)
+- [README](https://erblast.github.io/cookie_ds_demo//README.html){:target="_blank"}
 
 # html Files Created from Rules
 

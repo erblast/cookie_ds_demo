@@ -4,11 +4,13 @@ The content rendered from this file is used for the snakemake report.
 
 # Documentation
 
-  - [snakemake report](./snakemake_report/index.html)
+  - [snakemake
+    report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html){:target="\_blank"}
 
-  - [R functions documentation](./cookie_ds_demoRdocs/index.html)
+  - [R functions
+    documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html){:target="\_blank"}
 
-  - [README](README.html)
+  - [README](https://erblast.github.io/cookie_ds_demo//README.html){:target="\_blank"}
 
 # html Files Created from Rules
 

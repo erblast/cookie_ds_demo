@@ -7,11 +7,13 @@
 Documentation
 =============
 
--  `snakemake report <./snakemake_report/index.html>`__
+-  `snakemake
+   report <https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html>`__\ {:target=“\_blank”}
 
--  `R functions documentation <./cookie_ds_demoRdocs/index.html>`__
+-  `R functions
+   documentation <https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html>`__\ {:target=“\_blank”}
 
--  `README <README.html>`__
+-  `README <https://erblast.github.io/cookie_ds_demo//README.html>`__\ {:target=“\_blank”}
 
 html Files Created from Rules
 =============================
