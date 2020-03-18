@@ -1,0 +1,52 @@
+---
+title: "Index"
+output: 
+  md_document:
+    variant: gfm
+editor_options:
+  chunk_output_type: console
+---
+<!-- 
+The content rendered from this file is used for the snakemake report.
+-->
+
+```{r libraries = FALSE}
+suppressPackageStartupMessages( library('tidyverse') )
+suppressPackageStartupMessages( library('knitr') )
+suppressPackageStartupMessages( library('devtools') )
+suppressPackageStartupMessages( devtools::load_all("cookiedsdemopkgr") )
+```
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
+debug_file = paste0('debug/', 'index', '_rmd.Rdata')
+save.image(debug_file)
+```
+
+- [snakemake report](./snakemake_report/index.html)
+
+- [R functions documentation](./cookie_ds_demoRdocs/index.html)
+
+- [README](README.html)
+
+# Html Files Created from Rules
+
+```{r echo = FALSE}
+
+path = 'docs/html'
+
+files = dir(path, pattern = '.html$')
+
+file_paths = paste0('html', '/', files)
+  
+links = paste0('<a target=_blank href=', file_paths, '>',files, '</a>')
+
+```
+
+```{r echo = FALSE }
+mdown_list = paste0("- [",files,"](html/", files, ")  " ) %>%
+  paste( collapse = '\n')
+```
+
+`r mdown_list`
+
