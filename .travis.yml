@@ -11,11 +11,10 @@ script:
   # in CD we would run the entire container default command here we use travis for both
   - docker run -v"$PWD:/app/" cookie_ds_demo
 
+# https://www.r-bloggers.com/continuous-deployment-of-package-documentation-with-pkgdown-and-travis-ci/
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local-dir: docs
-  on:
-    branch: master
