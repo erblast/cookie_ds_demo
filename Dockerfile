@@ -43,5 +43,6 @@ CMD snakemake test -F && \
     snakemake lint -F && \
     snakemake --use-conda -F && \
     snakemake report -F && \
+    mkdir -p ./docs/wflow && \
     snakemake --dag | dot -Tpng > ./docs/wflow/wflow.png && \
     snakemake --report docs/snakemake_report/index.html 
