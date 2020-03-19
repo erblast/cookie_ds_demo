@@ -10,3 +10,11 @@ script:
   - docker run -v"$PWD:/app/" cookie_ds_demo snakemake lint -F
   # in CD we would run the entire container default command here we use travis for both
   - docker run -v"$PWD:/app/" cookie_ds_demo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
