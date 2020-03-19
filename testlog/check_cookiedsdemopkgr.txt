@@ -1,5 +1,7 @@
 Writing NAMESPACE
 Writing NAMESPACE
+Writing embedded_packages_are_great.Rd
+Writing lint_package.Rd
 ── Building ──────────────────────────────────────────────── cookiedsdemopkgr ──
 Setting env vars:
 ● CFLAGS    : -Wall -pedantic
@@ -7,11 +9,11 @@ Setting env vars:
 ● CXX11FLAGS: -Wall -pedantic
 ────────────────────────────────────────────────────────────────────────────────
      checking for file ‘/app/src/cookiedsdemopkgr/DESCRIPTION’ ...  ✔  checking for file ‘/app/src/cookiedsdemopkgr/DESCRIPTION’
-  ─  preparing ‘cookiedsdemopkgr’: (389ms)
-     checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+  ─  preparing ‘cookiedsdemopkgr’: (477ms)
+   checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
   ─  checking for LF line-endings in source and make files and shell scripts
   ─  checking for empty or unneeded directories
-─  building ‘cookiedsdemopkgr_0.0.0.9000.tar.gz’
+  ─  building ‘cookiedsdemopkgr_0.0.0.9000.tar.gz’
      
 ── Checking ──────────────────────────────────────────────── cookiedsdemopkgr ──
 Setting env vars:
@@ -19,71 +21,64 @@ Setting env vars:
 ● _R_CHECK_CRAN_INCOMING_       : FALSE
 ● _R_CHECK_FORCE_SUGGESTS_      : FALSE
 ── R CMD check ─────────────────────────────────────────────────────────────────
-  ─  using log directory ‘/tmp/RtmppPmcCd/cookiedsdemopkgr.Rcheck’
-  ─  using R version 3.6.0 (2019-04-26)
-─  using platform: x86_64-pc-linux-gnu (64-bit)
-─  using session charset: UTF-8
-  ─  using options ‘--no-manual --as-cran’
-  ✔  checking for file ‘cookiedsdemopkgr/DESCRIPTION’
-  ─  this is package ‘cookiedsdemopkgr’ version ‘0.0.0.9000’
-─  package encoding: UTF-8
-   checking package namespace information ...  ✔  checking package namespace information
-   checking package dependencies ...  ✔  checking package dependencies (2.8s)
-   checking if this is a source package ...  ✔  checking if this is a source package
-✔  checking if there is a namespace
-     checking for executable files ...  ✔  checking for executable files
-  ✔  checking for hidden files and directories
-✔  checking for portable file names
-   checking for sufficient/correct file permissions ...  ✔  checking for sufficient/correct file permissions
-✔  checking serialization versions
-   checking whether package ‘cookiedsdemopkgr’ can be installed ...  ✔  checking whether package ‘cookiedsdemopkgr’ can be installed (1.5s)
-   checking installed package size ...  ✔  checking installed package size
-  ✔  checking package directory
-     checking for future file timestamps ...  ✔  checking for future file timestamps (890ms)
-   checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information (340ms)
-  N  checking top-level files
-   Non-standard file/directory found at top level:
-     ‘LICENCE.md’
-✔  checking for left-over files
-✔  checking index information
-   checking package subdirectories ...  ✔  checking package subdirectories
-     checking R files for non-ASCII characters ...  ✔  checking R files for non-ASCII characters
-     checking R files for syntax errors ...  ✔  checking R files for syntax errors
-     checking whether the package can be loaded ...  ✔  checking whether the package can be loaded
-     checking whether the package can be loaded with stated dependencies ...  ✔  checking whether the package can be loaded with stated dependencies
-     checking whether the package can be unloaded cleanly ...  ✔  checking whether the package can be unloaded cleanly
-     checking whether the namespace can be loaded with stated dependencies ...  ✔  checking whether the namespace can be loaded with stated dependencies
-     checking whether the namespace can be unloaded cleanly ...  ✔  checking whether the namespace can be unloaded cleanly
-     checking loading without being on the library search path ...  ✔  checking loading without being on the library search path
-     checking dependencies in R code ...  ✔  checking dependencies in R code
-     checking S3 generic/method consistency ...  ✔  checking S3 generic/method consistency (529ms)
-     checking replacement functions ...  ✔  checking replacement functions
-     checking foreign function calls ...  ✔  checking foreign function calls
-     checking R code for possible problems ...  ✔  checking R code for possible problems (2.4s)
-     checking Rd files ...  ✔  checking Rd files
-     checking Rd metadata ...  ✔  checking Rd metadata
-     checking Rd line widths ...  ✔  checking Rd line widths
-     checking Rd cross-references ...  ✔  checking Rd cross-references
-     checking for missing documentation entries ...  ✔  checking for missing documentation entries
-     checking for code/documentation mismatches ...  ✔  checking for code/documentation mismatches (556ms)
-     checking Rd \usage sections ...  ✔  checking Rd \usage sections (678ms)
-     checking Rd contents ...  ✔  checking Rd contents
-     checking for unstated dependencies in examples ...  ✔  checking for unstated dependencies in examples
-     checking examples ...  ✔  checking examples (725ms)
-     checking for unstated dependencies in ‘tests’ ...  ✔  checking for unstated dependencies in ‘tests’
-     checking tests ...  ─  checking tests
-     Running ‘testthat.R’    ✔  Running ‘testthat.R’ (453ms)
-     
-   See
-     ‘/tmp/RtmppPmcCd/cookiedsdemopkgr.Rcheck/00check.log’
-   for details.
-   
-   
-── R CMD check results ──────────────────────── cookiedsdemopkgr 0.0.0.9000 ────
-Duration: 15.4s
+* using log directory ‘/tmp/Rtmpymn9mx/cookiedsdemopkgr.Rcheck’
+* using R version 3.6.0 (2019-04-26)
+* using platform: x86_64-pc-linux-gnu (64-bit)
+* using session charset: UTF-8
+* using options ‘--no-manual --as-cran’
+* checking for file ‘cookiedsdemopkgr/DESCRIPTION’ ... OK
+* this is package ‘cookiedsdemopkgr’ version ‘0.0.0.9000’
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking for sufficient/correct file permissions ... OK
+* checking serialization versions ... OK
+* checking whether package ‘cookiedsdemopkgr’ can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... OK
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... OK
+* checking Rd \usage sections ... OK
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... OK
+* checking for unstated dependencies in ‘tests’ ... OK
+* checking tests ...
+  Running ‘testthat.R’
+ OK
+* DONE
 
-❯ checking top-level files ... NOTE
-  Non-standard file/directory found at top level:
-    ‘LICENCE.md’
+Status: OK
 
-0 errors ✔ | 0 warnings ✔ | 1 note ✖
+── R CMD check results ──────────────────────── cookiedsdemopkgr 0.0.0.9000 ────
+Duration: 18.5s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔

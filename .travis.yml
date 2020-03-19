@@ -4,4 +4,7 @@ services:
   - docker
   
 script: 
-  - docker build . --file  docker/Dockerfile -t cookiedsdemo && docker run -v"$PWD:/app/" cookiedsdemo
+  - docker build . --file docker/Dockerfile -t cookie_ds_demo
+  - docker build . --file docker/test.dockerfile  -t cookie_ds_demo_test
+  - docker run -v"$PWD:/app/" cookie_ds_demo_test
+  - docker run -v"$PWD:/app/" cookie_ds_demo

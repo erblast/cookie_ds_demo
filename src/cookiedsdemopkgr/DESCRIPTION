@@ -14,5 +14,6 @@ Depends:
   lintr
 Suggests:
     testthat,
-    devtools
+    devtools,
+    pkgdown
 RoxygenNote: 6.1.1

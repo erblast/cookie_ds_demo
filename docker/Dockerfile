@@ -1,6 +1,5 @@
 FROM erblast/r_conda_snakemake_pkgs
 
-COPY ./ /app/
 WORKDIR /app
 
 # # install R packages: ----------------------------------------------------
@@ -34,5 +33,7 @@ WORKDIR /app
 # RUN echo "conda activate impala" >> ~/.bashrc
 
 
-CMD snakemake test && \
-    snakemake lint
+CMD snakemake --use-conda -F && \
+    snakemake report -F && \
+    snakemake --dag | dot -Tpng > ./docs/wflow/wflow.png && \
+    snakemake --report docs/snakemake_report/index.html 

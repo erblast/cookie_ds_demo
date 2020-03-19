@@ -3,7 +3,7 @@ title: "plot data"
 output: 
     html_document:
       toc: true
-      toc_float: false
+      toc_float: true
       toc_depth: 2
 editor_options:
   chunk_output_type: console
