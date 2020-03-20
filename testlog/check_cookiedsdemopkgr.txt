@@ -19,7 +19,7 @@ Setting env vars:
 ● _R_CHECK_CRAN_INCOMING_       : FALSE
 ● _R_CHECK_FORCE_SUGGESTS_      : FALSE
 ── R CMD check ─────────────────────────────────────────────────────────────────
-* using log directory ‘/tmp/RtmpMvYJrL/cookiedsdemopkgr.Rcheck’
+* using log directory ‘/tmp/RtmpgeU48W/cookiedsdemopkgr.Rcheck’
 * using R version 3.6.0 (2019-04-26)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -77,6 +77,6 @@ Setting env vars:
 Status: OK
 
 ── R CMD check results ──────────────────────── cookiedsdemopkgr 0.0.0.9000 ────
-Duration: 12.8s
+Duration: 10.8s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
