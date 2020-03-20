@@ -38,6 +38,7 @@ COPY . /repo
 # mount folder
 WORKDIR /app
 
+RUN conda env update --file /repo/envs/cookiedsdemo_conda.yml
 
 CMD snakemake test -F && \
     snakemake lint -F && \

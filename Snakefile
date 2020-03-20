@@ -16,8 +16,6 @@ rule all:
 rule load_dataset:
     output:
         'data/out/feather/data.feather'
-    conda:
-        'envs/cookiedsdemo_debian.yml'
     script:
         'src/py/load.py'
 
@@ -50,8 +48,6 @@ rule plot_rmd_shell:
         """
         
 rule plot_execute_nb_plot:
-    conda:
-        'envs/cookiedsdemo_debian.yml'
     input:
         'src/nb/vanilla/plot.ipynb',
         'data/out/feather/data.feather'
@@ -66,8 +62,6 @@ rule plot_execute_nb_plot:
         """
         
 rule plot_nb_2_html:
-    conda:
-        'envs/cookiedsdemo_debian.yml'
     input:
         'src/nb/executed/plot.ipynb'
     output:

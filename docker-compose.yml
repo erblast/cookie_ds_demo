@@ -1,9 +1,18 @@
 version: '3.7'
 services:
   build_image:
-    build: .
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
     image: 'cookie_ds_demo'
     command: /bin/bash
+    
+  build_jup_image:
+    build:
+      context: .
+      dockerfile: docker/jupyter.dockerfile
+    image: 'cookie_ds_demo_jupyter'
+
   shell:
     image: 'cookie_ds_demo'
     working_dir: /app
@@ -22,3 +31,20 @@ services:
       PASSWORD: '123'
       USER: 'rstudio'
   
+  jupyter:
+    image: 'cookie_ds_demo_jupyter'
+    ports:
+      - '8888:8888'
+    volumes:
+      - '.:/home/jovyan/work'
+    environment:
+      JUPYTER_TOKEN: '123'
+
+  jekyll:
+    image: jekyll/jekyll:pages
+    ports:
+      - '4000:4000'
+    volumes:
+      - './docs:/srv/jekyll'
+    command:
+      jekyll serve

@@ -17,7 +17,8 @@ docker run -it --rm -v "$PWD":/app cookie_ds_demo
 builds cookie_ds_demo and start a shell_1 and rstudio_1 container
 
 ```
-docker-compose up -d --build
+docker-compose build --parallel
+docker-compose up -d 
 docker container exec -it cookie_ds_demo_shell_1 /bin/bash 
 docker-compose down
 ```

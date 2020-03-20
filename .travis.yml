@@ -4,7 +4,7 @@ services:
   - docker
   
 script: 
-  - docker build .  -t cookie_ds_demo
+  - docker build --file docker/Dockerfile  -t cookie_ds_demo .
   # in CI we would only run light weight tests 
   - docker run -v"$PWD:/app/" cookie_ds_demo snakemake test -F
   - docker run -v"$PWD:/app/" cookie_ds_demo snakemake lint -F
