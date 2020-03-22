@@ -2,6 +2,9 @@
 The content rendered from this file is used for the jekyll github page.
 -->
 
+demo of [cookie\_dc project
+template](https://github.com/erblast/cookie_ds.git)
+
 ## Documentation
 
   - [cookiedsdemopkgr

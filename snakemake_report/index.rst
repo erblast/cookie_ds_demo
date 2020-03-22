@@ -4,6 +4,9 @@
    The content rendered from this file is used as a prefix for snakemake reports.
    -->
 
+demo of `cookie_dc project
+template <https://github.com/erblast/cookie_ds.git>`__
+
 Documentation
 =============
 
