@@ -2,8 +2,9 @@
 
 import seaborn as sns
 import pandas as pd
+import yaml
 
-with open(snakemake.config["config_file"]["exec"], 'r') as f:
+with open(snakemake.config["config_files"]["exec"], 'r') as f:
     params = yaml.safe_load(f)
 
 df = sns.load_dataset(params['dataset'])
