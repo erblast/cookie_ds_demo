@@ -3,7 +3,7 @@ services:
   build_image:
     build:
       context: .
-      dockerfile: docker/Dockerfile
+      dockerfile: Dockerfile
     image: 'cookie_ds_demo'
     command: /bin/bash
     

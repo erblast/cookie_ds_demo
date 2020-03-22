@@ -5,14 +5,19 @@ output:
     variant: gfm
 editor_options:
   chunk_output_type: console
+params:
+  rules_to_report:
+    - exec
+    - test
+    - job
 ---
 <!-- 
-The content rendered from this file is used for the jekyll github page.
+The content rendered from this file is used as a prefix for snakemake reports.
 -->
 
 ```{r setup, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE, cache = F, warning = F, message = F)
-debug_file = paste0('debug/', 'index', '_rmd.Rdata')
+debug_file <-  paste0('debug/', 'index', '_rmd.Rdata')
 save.image(debug_file)
 ```
 
@@ -25,23 +30,20 @@ suppressPackageStartupMessages( devtools::load_all("src/cookiedsdemopkgr") )
 ```
 
 ### Documentation
-- [snakemake report](https://erblast.github.io/cookie_ds_demo//snakemake_report/index.html)
 
 - [cookiedsdemopkgr documentation](https://erblast.github.io/cookie_ds_demo//cookiedsdemopkgr/index.html)
 
 - [github repo](https://github.com/erblast/cookie_ds_demo.git)
 
-### html Files Created from Rules
+### Snakemake Reports
 
-```{r echo = FALSE}
-
-path = 'docs/html'
-
-files = dir(path, pattern = '.html$')
-```
 
 ```{r echo = FALSE }
-mdown_list = paste0("- [", files, "](https://erblast.github.io/cookie_ds_demo//html/", files, ')' ) %>%
+mdown_list <-  paste0("- [",
+                      params$rules_to_report,
+                      "](https://erblast.github.io/cookie_ds_demo/snakemake_report/",
+                      params$rules_to_report, 
+                      '.html)' ) %>%
   paste( collapse = '\n')
 ```
 

@@ -1,12 +1,10 @@
 include: 'rules/test.snakefile.py'
-include: 'rules/lint.snakefile.py'
-include: 'rules/report.snakefile.py'
-
+include: 'rules/job.snakefile.py'
 configfile: 'config/config.yml'
 report: 'docs/snakemake_report/index.rst'
 
 
-rule all:
+rule exec:
     input:
         'docs/html/plot_rmd_snakemake.html',
         'docs/html/plot_rmd_shell.html',
