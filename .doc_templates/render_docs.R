@@ -57,3 +57,8 @@ report_cmd <-  paste("/opt/conda/bin/snakemake",
                    report_files)
 
 sapply(report_cmd, system)
+
+
+# copy config file
+
+file.copy(".doc_templates/_config.yml", "docs/", overwrite = TRUE)
