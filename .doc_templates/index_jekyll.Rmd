@@ -26,6 +26,7 @@ save.image(debug_file)
 suppressPackageStartupMessages( library('tidyverse') )
 suppressPackageStartupMessages( library('knitr') )
 ```
+demo of [cookie_dc project template](https://github.com/erblast/cookie_ds.git)
 
 ## Documentation
 
