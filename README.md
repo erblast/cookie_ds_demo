@@ -1,5 +1,5 @@
 [![Snakemake](https://img.shields.io/badge/snakemake-≥5.6.0-brightgreen.svg?style=flat)](https://snakemake.readthedocs.io)
-[![Build Status](https://travis-ci.erblast/cookie_ds_demo.svg?branch=master)](https://travis-ci.erblast/cookie_ds_demo)
+[![Build Status](https://travis-ci.org/erblast/cookie_ds_demo.svg?branch=master)](https://travis-ci.org/github/erblast/cookie_ds_demo)
 
 # cookie_ds_demo
 

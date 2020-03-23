@@ -4,9 +4,9 @@ FROM rocker/verse:3.6.1
 #################################################
 # Install additional required R packages        #
 #################################################
-
-RUN R -e "remotes::install_github('rstudio/renv@0.9.3', upgrade = 'never')"
-
+RUN git clone -b 0.9.3 --single-branch https://github.com/rstudio/renv.git renv 
+RUN R -e "devtools::install('renv/')"
+RUN rm -r -f renv
 
 ###########################################
 # Install Conda                           #
