@@ -17,18 +17,18 @@ template](https://github.com/erblast/cookie_ds.git)
 | files                                                                                   |
 | :-------------------------------------------------------------------------------------- |
 | \- [check\_cookiedsdemopkgr.txt](testlog/check_cookiedsdemopkgr.txt){:target="\_blank"} |
-| \- [cookiedsdemopkgr\_lint.txt](testlog/cookiedsdemopkgr_lint.txt){:target="\_blank"}   |
+| \- [lint\_cookiedsdemopkgr.txt](testlog/lint_cookiedsdemopkgr.txt){:target="\_blank"}   |
 | \- [test\_cookiedsdemopkgr.txt](testlog/test_cookiedsdemopkgr.txt){:target="\_blank"}   |
 
 <br>
 
 ### Rules
 
-| snakemake\_report                  | workflow                |
-| :--------------------------------- | :---------------------- |
-| [exec](snakemake_report/exec.html) | ![exec](wflow/exec.png) |
-| [test](snakemake_report/test.html) | ![test](wflow/test.png) |
-| [job](snakemake_report/job.html)   | ![job](wflow/job.png)   |
+| snakemake\_report                                     | workflow                                   |
+| :---------------------------------------------------- | :----------------------------------------- |
+| [exec](snakemake_report/exec.html){:target="\_blank"} | ![exec](wflow/exec.png){:target="\_blank"} |
+| [test](snakemake_report/test.html){:target="\_blank"} | ![test](wflow/test.png){:target="\_blank"} |
+| [job](snakemake_report/job.html){:target="\_blank"}   | ![job](wflow/job.png){:target="\_blank"}   |
 
 <br>
 
@@ -47,5 +47,16 @@ template](https://github.com/erblast/cookie_ds.git)
 | files                                                              |
 | :----------------------------------------------------------------- |
 | ![plot\_rmd\_shell.png](png/plot_rmd_shell.png){:target="\_blank"} |
+
+<br>
+
+### R and conda environment
+
+| files                                                                        |
+| :--------------------------------------------------------------------------- |
+| [env\_conda\_no\_builds.yml](env/env_conda_no_builds.yml){:target="\_blank"} |
+| [env\_conda.yml](env/env_conda.yml){:target="\_blank"}                       |
+| [env\_R.html](env/env_R.html){:target="\_blank"}                             |
+| [renv.lock](env/renv.lock){:target="\_blank"}                                |
 
 <br>
