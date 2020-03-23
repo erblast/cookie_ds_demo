@@ -1,7 +1,23 @@
 library(yaml)
 library(rmarkdown)
+library(renv)
 
 config <- yaml::read_yaml("config/config.yml")
+
+# Document R and python Environment -------------------------------
+
+rmarkdown::render(".doc_templates/env_R.Rmd",
+                  output_file = "env_R.html",
+                  output_dir = "./docs/env",
+                  envir = new.env(),
+                  knit_root_dir = getwd()
+)
+
+system("/opt/conda/bin/conda env export -f docs/env/env_conda.yml -n base")
+system("/opt/conda/bin/conda env export --no-builds -f docs/env/env_conda_no_builds.yml -n base")
+renv::snapshot(lockfile = "docs/env/renv.lock", confirm = FALSE)
+file.remove("renv/activate.R")
+file.remove("renv/", recursive = TRUE)
 
 # Render Markdown files -------------------------------------------
 

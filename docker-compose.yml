@@ -1,9 +1,7 @@
 version: '3.7'
 services:
   build_image:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     image: 'cookie_ds_demo'
     command: /bin/bash
     

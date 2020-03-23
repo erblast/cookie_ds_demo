@@ -9,9 +9,9 @@ script:
   - docker run -v"$PWD:/app/" cookie_ds_demo snakemake test -F
   # in CD we would run the entire container default command here we use travis for both
   - docker run -v"$PWD:/app/" cookie_ds_demo
-  # we would use a job scheduled to run jobs, here we also use travis
-  - docker run -v"$PWD:/app/" -e CORES=1 -e JOB_VARS1=job_configuration cookie_ds_demo 
-
+  # we would normally use a job scheduler to run jobs, here we also use travis
+  - docker run -v"$PWD:/app/" -e JOB_VARS1=job_configuration cookie_ds_demo snakemake job -F --cores 1
+  
 # https://www.r-bloggers.com/continuous-deployment-of-package-documentation-with-pkgdown-and-travis-ci/
 deploy:
   provider: pages

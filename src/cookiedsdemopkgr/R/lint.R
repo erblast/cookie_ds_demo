@@ -15,7 +15,7 @@ lint_package <- function(...) {
 
     if (length(lint_results) > 0) {
         print(lint_results)
-        stop("lintr detected code issues in cookiedsdemopkgr")
+        stop(paste(lint_results))
     }
 
 }

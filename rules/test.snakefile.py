@@ -9,7 +9,7 @@ rule test:
     input:
         'docs/testlog/test_cookiedsdemopkgr.txt',
         'docs/testlog/check_cookiedsdemopkgr.txt',
-        "docs/testlog/cookiedsdemopkgr_lint.txt", 
+        "docs/testlog/lint_cookiedsdemopkgr.txt", 
         "docs/cookiedsdemopkgr/index.html"
 
 rule test_cookiedsdemopkgr:
@@ -48,15 +48,17 @@ if config["lint"]:
     input:
         "docs/cookiedsdemopkgr/index.html"
     output:
-      report("docs/testlog/cookiedsdemopkgr_lint.txt", category="lint")
+      report("docs/testlog/lint_cookiedsdemopkgr.txt", category="lint")
     shell: """
               Rscript -e 'sink(\"{output}\")' \
                       -e 'devtools::load_all("src/cookiedsdemopkgr")' \
-                      -e 'lint_package("src/cookiedsdemopkgr")' \
+                      -e 'my_linters <- with_defaults(line_length_linter = line_length_linter(120))' \
+                      -e 'lint_package("src/cookiedsdemopkgr", linters = my_linters)' \
                       -e 'sink()' \
              """
 else:
   rule lint:
-    shell: ""
+    shell: "touch {output} && \
+            echo 'lint switched off in confg/config.yml' >> {output}"
 
 

@@ -58,12 +58,12 @@ tibble( snakemake_report = paste0('[',
           params$rules_to_report,
           '](snakemake_report/',
           params$rules_to_report,
-          '.html)'),
+          '.html){:target="_blank"}'),
         workflow = paste0('![',
           params$rules_to_report,
           '](wflow/',
           params$rules_to_report,
-          '.png)')
+          '.png){:target="_blank"}')
           ) %>%
   knitr::kable()
 ```
@@ -97,6 +97,24 @@ path = 'docs/png'
 files = dir(path, pattern = '.png$')
 
 mdown_list = paste0("![", files, "](png/", files, '){:target="_blank"}' ) %>%
+  paste( collapse = '\n')
+
+tibble( files = str_split(mdown_list, "\n")[[1]] ) %>%
+  knitr::kable()
+```
+
+<br> 
+
+
+### R and conda environment
+
+```{r echo = FALSE}
+
+path = 'docs/env'
+
+files = dir(path)
+
+mdown_list = paste0("[", files, "](env/", files, '){:target="_blank"}' ) %>%
   paste( collapse = '\n')
 
 tibble( files = str_split(mdown_list, "\n")[[1]] ) %>%
