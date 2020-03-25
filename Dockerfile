@@ -4,6 +4,8 @@ FROM rocker/verse:3.6.1
 #################################################
 # Install additional required R packages        #
 #################################################
+
+# github API calls are limited, cloning is more reliable because it does not require API
 RUN git clone -b 0.9.3 --single-branch https://github.com/rstudio/renv.git renv 
 RUN R -e "devtools::install('renv/')"
 RUN rm -r -f renv
