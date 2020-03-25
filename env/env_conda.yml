@@ -118,9 +118,8 @@ dependencies:
   - pyopenssl=19.1.0=py37_0
   - pyparsing=2.4.6=py_0
   - pyqt=5.9.2=py37h05f1152_2
-  - pyrsistent=0.15.7=py37h7b6447c_0
   - pysocks=1.7.1=py37_0
-  - python=3.7.6=h0371630_2
+  - python=3.7.7=h191fe78_0_cpython
   - python-dateutil=2.8.1=py_0
   - pytz=2019.3=py_0
   - pyzmq=18.1.1=py37he6710b0_0
@@ -170,6 +169,7 @@ dependencies:
     - networkx==2.4
     - psutil==5.7.0
     - pygraphviz==1.5
+    - pyrsistent==0.16.0
     - pyyaml==5.3.1
     - ratelimiter==1.2.0.post0
     - smmap==3.0.1

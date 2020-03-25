@@ -8,7 +8,7 @@ Setting env vars:
 ────────────────────────────────────────────────────────────────────────────────
      checking for file ‘/app/src/cookiedsdemopkgr/DESCRIPTION’ ...  ✔  checking for file ‘/app/src/cookiedsdemopkgr/DESCRIPTION’
   ─  preparing ‘cookiedsdemopkgr’:
-   checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+     checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
   ─  checking for LF line-endings in source and make files and shell scripts
   ─  checking for empty or unneeded directories
   ─  building ‘cookiedsdemopkgr_0.0.0.9000.tar.gz’
@@ -19,7 +19,7 @@ Setting env vars:
 ● _R_CHECK_CRAN_INCOMING_       : FALSE
 ● _R_CHECK_FORCE_SUGGESTS_      : FALSE
 ── R CMD check ─────────────────────────────────────────────────────────────────
-* using log directory ‘/tmp/RtmpX8NHpR/cookiedsdemopkgr.Rcheck’
+* using log directory ‘/tmp/RtmpLTEY2n/cookiedsdemopkgr.Rcheck’
 * using R version 3.6.1 (2019-07-05)
 * using platform: x86_64-pc-linux-gnu (64-bit)
 * using session charset: UTF-8
@@ -77,6 +77,6 @@ Setting env vars:
 Status: OK
 
 ── R CMD check results ──────────────────────── cookiedsdemopkgr 0.0.0.9000 ────
-Duration: 17.2s
+Duration: 18.4s
 
 0 errors ✔ | 0 warnings ✔ | 0 notes ✔
